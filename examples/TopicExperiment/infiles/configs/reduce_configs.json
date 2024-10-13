@@ -1,0 +1,12 @@
+{
+    "umap": {
+        "n_components": 24,
+        "n_neighbors": 5,
+        "metric": "cosine",
+        "random_state": 42
+    },
+    "pca": {
+        "n_components": 24
+    }
+}
+

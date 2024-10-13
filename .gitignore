@@ -1,3 +1,21 @@
+# Customize
+# Unsupported Dockerfile
+Dockerfile
+
+## Ignore macOS-specific files
+.DS_Store
+
+## Byte-compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+## Virtual environment
+.env
+venv/
+.env/
+
+############### Template #################
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

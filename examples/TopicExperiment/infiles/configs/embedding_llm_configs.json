@@ -1,0 +1,10 @@
+{   
+    "openai": {
+        "model": "text-embedding-3-small", 
+        "batch_size": 32  
+    },
+    "voyageai": {
+        "model": "voyage-2", 
+        "batch_size": 32
+    }
+}

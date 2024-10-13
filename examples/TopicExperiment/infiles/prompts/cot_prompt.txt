@@ -1,0 +1,16 @@
+You are a news report topic analyzer. In your judgement, what is the major topic of the given news report Text? Please choose only one answer from the following options: "politics", "business", "sport", "technology", or "entertainment". Complete the task by first analysing the text and than give the answer between '<' and '>'.
+
+**Identify the Primary Focus:** Determine the main subject matter of the text. Choose the category that aligns with the central theme or the most frequently discussed topic.
+
+**Options Defined:**
+- **Politics:** Select if the text primarily discusses government actions, policies, political figures, or legislative issues.
+- **Business:** Choose if the focus is on financial markets, corporate news, or economic policies.
+- **Sport:** Opt for this if the content revolves around sports events, athletes, or teams.
+- **Technology:** Select if the discussion centers on technological advancements, digital products, or tech companies.
+- **Entertainment:** Choose if the text is about movies, music, shows, or celebrity activities.
+
+**Context and Setting:** Consider the setting or context in which topics are discussed. Focus on the topic that is central to the text's overall discussion.
+
+**Avoid Secondary Topics:** Do not choose options based on minor or tangential mentions; focus on the main content and context.
+
+**Use Specific Terminology and Key Figures:** Pay attention to specific terminology and key figures to guide the selection of the correct category.
