@@ -163,7 +163,7 @@ class TextClassifier:
         # Load prompt and indices
         prompt = get_prompt(prompt_file=prompt_file)
         exemplars_file = self.outfiles_dir / "exemplar_indices.json"
-        indices = json.loadf(exemplars_file.read_text())
+        indices = json.loads(exemplars_file.read_text())
 
         # Read docs dataset
         df = pd.read_csv(self.data_file)
@@ -201,11 +201,11 @@ class TextClassifier:
             # Save the extracted rules
             rules_path.write_text(json.dumps(results, indent=4))
         else:
-            results = json.loadf(rules_path.read_text())
+            results = json.loads(rules_path.read_text())
 
         # Concatenate all rules as a document
         docs = []
-        for i, result in enumerate(results, disable=disable_progress_bar):
+        for i, result in tqdm(enumerate(results), len(results), disable=disable_progress_bar):
             doc = Document(page_content=result, metadata={"idx": str(i)})
             docs.append(doc)
 
