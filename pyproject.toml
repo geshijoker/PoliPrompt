@@ -16,6 +16,17 @@ keywords = [
     "llm",
     "prompt",
 ]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
 requires-python = ">=3.10"
 
 [project.optional-dependencies]
@@ -50,17 +61,6 @@ Issues = "https://github.com/geshijoker/PoliPrompt/issues"
 [tool.setuptools]
 package-dir = {"" = "src"}  # This points setuptools to the src directory
 packages = ["poliprompt"]  # This is your main package in src/poliprompt
-classifiers = [
-    "Development Status :: 3 - Alpha",
-    "Intended Audience :: Developers",
-    "Intended Audience :: Science/Research",
-    "Operating System :: OS Independent",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12"
-]
 
 [tool.bandit]
 exclude_dirs = ["build","dist","tests","scripts"]
