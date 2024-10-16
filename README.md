@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://github.com/geshijoker/PoliPrompt/poliprompt_logo.png" width="800" />
+  <img src="https://github.com/geshijoker/PoliPrompt/blob/main/poliprompt_logo.png" width="800" />
 </p>
 
 ---
