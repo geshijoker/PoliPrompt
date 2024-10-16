@@ -6,3 +6,4 @@ setup(
     package_dir={"": "src"},  # This points setuptools to the src directory
     packages=["poliprompt"],  # This is your main package in src/poliprompt
 )
+python_requires=">=3.10"
