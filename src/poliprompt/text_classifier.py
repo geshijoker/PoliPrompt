@@ -205,7 +205,7 @@ class TextClassifier:
 
         # Concatenate all rules as a document
         docs = []
-        for i, result in tqdm(enumerate(results), len(results), disable=disable_progress_bar):
+        for i, result in tqdm(enumerate(results), total=len(results), disable=disable_progress_bar):
             doc = Document(page_content=result, metadata={"idx": str(i)})
             docs.append(doc)
 
