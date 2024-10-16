@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name =  "PoliPrompt"
-version = "0.2"
+version = "0.2.1"
 description = "PoliPrompt performs data analysis with state-of-the-art foundation models"
 authors = [
     {name = "Menglin Liu", email = "mliliu@ucdavis.edu"},

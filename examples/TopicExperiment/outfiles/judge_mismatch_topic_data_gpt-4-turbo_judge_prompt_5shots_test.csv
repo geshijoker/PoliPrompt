@@ -1,31 +1,13 @@
 mismatch ids,label
-64,"The correct response to the task is ""<politics>"". The text primarily discusses the legal and governmental challenges related to the expansion of airports in the UK, involving judicial reviews, government plans, and opposition from local councils and residents' groups. The focus is on the interaction between government policies and public opposition, which aligns with the ""politics"" category as defined in the task instructions. The text does not primarily focus on the business operations of BAA, the sports, technology, or entertainment sectors, making ""politics"" the most appropriate category."
+64,politics
 122,<entertainment>
-166,"Response 1: business
-Response 2: politics
+166,"The correct response to the task is ""<business>"". The text primarily discusses a failed government scheme related to online university courses, focusing on financial aspects such as the cost of the project, the lack of private sector investment, and the financial mismanagement highlighted by the payment of a bonus to the chief executive despite the project's failure. The involvement of the Commons education select committee and the discussion of business plans and market research further align the text with business-related topics, rather than politics or technology, which might also seem relevant but are not the central focus."
+199,"The correct response to the task is ""<business>.""
 
-Correct Response: business
-
-Reasoning: The text primarily discusses a failed government scheme related to online university courses, focusing on financial aspects such as the cost, investment failures, and economic impact. Although there is mention of government involvement and a select committee, the central theme revolves around the business and financial management of the e-University project, including its economic implications and the critique of its business model and financial execution. The political elements are secondary to the business and economic focus of the text.
-
-Answer: <business>"
-199,"business
-
-**Reasoning:**
-The text primarily discusses the financial and administrative aspects of the Millennium Dome's sale, including the involvement of various government bodies and the impact on taxpayers. The focus is on the financial management, errors in the sale process, and eventual regeneration of the site for economic benefit. This aligns with the ""business"" category, which includes discussions on economic policies and corporate news. The mention of turning the Dome into a sport and entertainment venue is a secondary aspect and does not change the primary focus on business and financial dealings.
-
-<business>"
+Reasoning: The text primarily discusses the financial and management aspects of selling the Millennium Dome, including the involvement of various government bodies and financial implications for taxpayers. The focus is on the economic management, the cost to maintain and sell the Dome, and the financial benefits of the final deal. Although the Dome's intended use includes sport and entertainment, the text does not delve into these aspects in detail but rather emphasizes the business and economic challenges and outcomes of the sale process. Thus, the major topic aligns with ""business"" rather than the other categories provided."
 201,<sport>
-219,<politics>
-373,<politics>
-412,"Response 1: politics
-Response 2: business
-
-Correct Response: politics
-
-Reasoning:
-The text primarily discusses the government's decision to increase the minimum wage, a policy action affecting over a million people. It includes statements from political figures such as Tony Blair and Gordon Brown, and reactions from various political parties and their leaders. The focus is on the implications of this policy for workers and the political motivations behind it, particularly in the context of an upcoming election. The text also touches on business concerns about the wage increase, but these are secondary to the political discussion about government policy and its social impact.
-
-Answer: <politics>"
+219,politics
+373,politics
+412,<politics>
 418,<sport>
 435,<sport>

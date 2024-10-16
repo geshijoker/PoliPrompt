@@ -10,6 +10,6 @@ logging.basicConfig(
 
 from .text_classifier import TextClassifier
 
-__version__ = "0.2"
+__version__ = "0.2.1"
 
 __all__ = ["TextClassifier"]
