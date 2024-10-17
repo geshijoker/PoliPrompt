@@ -121,7 +121,7 @@ jupyter notebook
 6. **After selecting the kernel, you can run the example code (TopicExperiment.ipynb) inside the notebook.**
 
 ## Citation
-To cite the **PoliPrompt** paper, please use the following BibTeX reference:
+To cite the **[PoliPrompt](https://arxiv.org/abs/2409.01466)** paper, please use the following BibTeX reference:
 
 ```bibtex
 @article{liu2024poliprompt,
