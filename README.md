@@ -120,5 +120,16 @@ jupyter notebook
 
 6. **After selecting the kernel, you can run the example code (TopicExperiment.ipynb) inside the notebook.**
 
+## Citation
+To cite the **PoliPrompt** paper, please use the following BibTeX reference:
+
+```bibtex
+@article{liu2024poliprompt,
+  title={PoliPrompt: A High-Performance Cost-Effective LLM-Based Text Classification Framework for Political Science},
+  author={Liu, Menglin and Shi, Ge},
+  journal={arXiv preprint arXiv:2409.01466},
+  year={2024}
+}
+```
 
 
