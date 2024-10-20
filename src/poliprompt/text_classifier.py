@@ -70,7 +70,7 @@ class TextClassifier:
         self.logs_dir = self.outfiles_dir / "logs"
 
         # Load the passwordf of LLMs from environment file
-        load_dotenv(Path(os.path.expanduser(env_path)))
+        load_dotenv(Path(os.path.expanduser(env_path)), override=True)
 
     def create_few_shot_pool(
             self, 
@@ -328,7 +328,12 @@ class TextClassifier:
         start_time = time.time()
         # Call LLM to annotate unlabelled instances
         try:
-            for i, row in tqdm(enumerate(df[self.feature_col]), total=len(df), initial=processed_count, disable=disable_progress_bar, leave=False):
+            progress_bar = tqdm(total=len(df), initial=processed_count, disable=disable_progress_bar, leave=False)
+            
+            for i, row in enumerate(df[self.feature_col]):
+                if i < processed_count:
+                    continue
+                
                 if i not in indices:
                     examples = select_kshots(
                         df, self.feature_col, self.answer_col, kshots, i, indices, embeddings, lambda_param, self.options
@@ -349,8 +354,13 @@ class TextClassifier:
                 else:
                     result = df.loc[i, self.answer_col]
                 results.append(result)
+                progress_bar.update(1)
+                
+            progress_bar.close()
+            
         except Exception as e:  # Naked execpt, blame the your LLM API
             logger.error(f"Error when calling LLM API to annotate texts: {e}")
+            
         finally:
             # Track and print the computation time
             end_time = time.time()
@@ -432,7 +442,7 @@ class TextClassifier:
         # Call LLM to annotate unlabelled instances
         results = []
         processed_ids = []
-        try:
+        try:            
             for i in tqdm(mismatch_indices, total=len(mismatch_indices), disable=disable_progress_bar, leave=False, desc="Processing indices"):
                 if i not in indices:
                     examples = select_kshots(
@@ -618,4 +628,3 @@ class TextClassifier:
                 logger.info(f"Results saved to {output_file}")
             else:
                 raise Exception("Empty results, please check the log.")
-        
